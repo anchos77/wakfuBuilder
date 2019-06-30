@@ -3,7 +3,7 @@ require_once __DIR__ . '/../model/simpleCurlModel.php';
 
 class loader {
 
-    const BASE_DIR = __DIR__.'\\..\\JsonData\\';
+    const BASE_DIR = __DIR__.'/../JsonData/';
     const BASE_URL = 'https://s.ankama.com/games/wakfu/gamedata/';
     const GAME_VERSION = 'config.json';
     const TYPES = ['actions','equipmentItemTypes','itemProperties','items','states'];
@@ -67,7 +67,7 @@ class loader {
 
 }
 $obj = new loader();
-//echo $obj->loadVersion() ? "true\n" : "false\n";
+//echo $obj->loadVersion() ? "true/n" : "false/n";
 $obj->loadVersion();
 //$obj->execute();
 $obj->download('equipmentItemTypes');

@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '\config.php';
-require_once __DIR__ . '\..\model\pdoModel.php';
-require_once __DIR__ . '\..\model\generateSql.php';
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/../model/pdoModel.php';
+require_once __DIR__ . '/../model/generateSql.php';
 
 
 class common {
@@ -22,7 +22,7 @@ class common {
 
     public function getJson($name){
         try{
-            $data = json_decode(file_get_contents(__DIR__ . "\..\JsonData\\{$name}.json"));
+            $data = json_decode(file_get_contents(__DIR__ . "/../JsonData/{$name}.json"));
             return $data;
         } catch(Exception $e){
             throw new Exception($e->getMessage());

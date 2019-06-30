@@ -23,4 +23,3 @@ class test {
 }
 $n = new test();
 echo $n->tester();
-
